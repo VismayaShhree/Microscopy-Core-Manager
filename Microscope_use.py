@@ -193,7 +193,7 @@ class MicroscopeUsageApp:
             self.conn.commit()
             
             # Update UI from main thread
-        try:
+            
             self.root.after(0, self.enter_new_data)
         except Exception as e:
             self.root.after(0, lambda: messagebox.showerror("Error", f"An error occurred while saving data: {e}"))
