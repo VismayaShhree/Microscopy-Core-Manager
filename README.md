@@ -24,6 +24,8 @@ A desktop app for microscopy core facilities to log instrument usage, track sess
 ### Option 1 — conda (recommended)
 
 ```bash
+git clone https://github.com/VismayaShhree/Microscope_use.git
+cd Microscope_use
 conda create -n microscope_use python=3.8
 conda activate microscope_use
 pip install -r requirements.txt
@@ -33,6 +35,8 @@ python Microscope_use.py
 ### Option 2 — pip only
 
 ```bash
+git clone https://github.com/VismayaShhree/Microscope_use.git
+cd Microscope_use
 pip install -r requirements.txt
 python Microscope_use.py
 ```
@@ -62,7 +66,6 @@ Edit the file in any text editor. Each instrument looks like:
 "SEM": {
   "full_name": "Scanning Electron Microscope",
   "hourly_rate": 35,
-  "sample_prep_rate": 30,
   "enabled": true
 }
 ```
@@ -77,10 +80,12 @@ To package into a `.app` (Mac) or `.exe` (Windows):
 
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --windowed Microscope_use.py
+pyinstaller --windowed Microscope_use.py
 ```
 
-The built app appears in the `dist/` folder.
+The built app appears in the `dist/` folder. Keep `config.json` in the same folder as the `.app`.
+
+> **First launch on Mac:** Right-click → Open to bypass Gatekeeper (unsigned app warning).
 
 ---
 
@@ -99,9 +104,7 @@ Microscope_use/
 ├── Microscope_use.py       # Main application
 ├── config.json             # Instrument & rate configuration
 ├── requirements.txt        # Python dependencies
-├── microscope_usage.db     # Local database (auto-created on first run)
-└── dist/
-    └── Microscope_use.app  # Built standalone app (after PyInstaller)
+└── microscope_usage.db     # Local database (auto-created on first run)
 ```
 
 ---
