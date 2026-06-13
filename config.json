@@ -1,0 +1,63 @@
+{
+  "facility_name": "Microscopy Core Facility",
+  "admin_pin": "1234",
+  "instruments": {
+    "TEM": {
+      "full_name": "Transmission Electron Microscope",
+      "hourly_rate": 35,
+      "enabled": true
+    },
+    "LM": {
+      "full_name": "Light Microscope",
+      "hourly_rate": 30,
+      "enabled": true
+    },
+    "Confocal": {
+      "full_name": "Confocal Microscope",
+      "hourly_rate": 30,
+      "enabled": true
+    },
+    "Other": {
+      "full_name": "Other Instrument",
+      "hourly_rate": 30,
+      "enabled": true
+    }
+  },
+  "sample_prep_types": {
+    "SC": {
+      "full_name": "Sputter Coating",
+      "rate_per_sample": 25,
+      "enabled": true
+    },
+    "CPD": {
+      "full_name": "Critical Point Drying",
+      "rate_per_sample": 30,
+      "enabled": true
+    },
+    "TS": {
+      "full_name": "Thin Sectioning",
+      "rate_per_sample": 35,
+      "enabled": true
+    },
+    "ST": {
+      "full_name": "Staining",
+      "rate_per_sample": 20,
+      "enabled": true
+    },
+    "RE": {
+      "full_name": "Resin Embedding",
+      "rate_per_sample": 30,
+      "enabled": true
+    },
+    "Other": {
+      "full_name": "Other Preparation",
+      "rate_per_sample": 25,
+      "enabled": true
+    },
+    "SEM": {
+      "full_name": "Critical",
+      "rate_per_sample": 30.0,
+      "enabled": true
+    }
+  }
+}
