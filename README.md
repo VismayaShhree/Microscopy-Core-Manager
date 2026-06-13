@@ -24,8 +24,8 @@ A desktop app for microscopy core facilities to log instrument usage, track sess
 ### Option 1 — conda (recommended)
 
 ```bash
-git clone https://github.com/VismayaShhree/Microscope_use.git
-cd Microscope_use
+git clone https://github.com/VismayaShhree/Microscopy-core-manager.git
+cd Microscopy-core-manager
 conda create -n microscope_use python=3.8
 conda activate microscope_use
 pip install -r requirements.txt
@@ -35,8 +35,8 @@ python Microscope_use.py
 ### Option 2 — pip only
 
 ```bash
-git clone https://github.com/VismayaShhree/Microscope_use.git
-cd Microscope_use
+git clone https://github.com/VismayaShhree/Microscopy-core-manager.git
+cd Microscopy-core-manager
 pip install -r requirements.txt
 python Microscope_use.py
 ```
